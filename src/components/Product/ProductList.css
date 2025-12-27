@@ -1,0 +1,24 @@
+.products_container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 5 products per row */
+    gap: 15px;
+    padding: 20px;
+  }
+  
+  /* Responsive adjustments */
+  @media screen and (max-width: 1200px) {
+    .products_container { grid-template-columns: repeat(4, 1fr); }
+  }
+  
+  @media screen and (max-width: 992px) {
+    .products_container { grid-template-columns: repeat(3, 1fr); }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .products_container { grid-template-columns: repeat(2, 1fr); }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .products_container { grid-template-columns: 1fr; }
+  }
+  

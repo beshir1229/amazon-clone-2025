@@ -1,0 +1,40 @@
+.lower_container {
+    background-color: #232f3e;
+    color: white;
+    width: 100%;
+    display: flex;          /* make container flex */
+    align-items: center;    /* vertically center items */
+    height: 40px;           /* typical Amazon lower header height */
+    padding: 0 20px;        /* horizontal padding */
+    box-sizing: border-box;
+    font-size: 14px;
+  }
+  
+  .lower_container ul {
+    display: flex;          /* horizontal layout */
+    list-style: none;
+    gap: 15px;              /* spacing between items */
+    margin: 0;
+    padding: 0;
+    align-items: center;
+  }
+  
+  .lower_container ul li {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 4px;           /* makes the hover box rounded */
+    transition: background-color 0.2s ease, color 0.2s ease;
+  }
+  
+  /* Box-style hover effect */
+  .lower_container ul li:hover {
+    background-color: #37475a;    /* slightly lighter dark background */
+    color: #fff;                  /* text becomes white */
+  }
+  @media screen and (max-width: 576px)
+  {.lower_container ul li:not(:first-child) {
+    display: none; /* hide all li except the one with class "all" */
+  }}

@@ -1,0 +1,30 @@
+
+.results_container {
+  padding: 20px;
+}
+
+.results_container h1 {
+  margin-bottom: 20px;
+}
+
+/* Horizontal flex container for products */
+.products_grid {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;   /* horizontal scroll */
+  flex-wrap: nowrap;  /* prevent wrapping */
+}
+
+.products_grid > * {
+  flex: 0 0 250px;
+  max-width: 250px;
+}
+
+.products_grid::-webkit-scrollbar {
+  height: 8px;
+}
+
+.products_grid::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 4px;
+}
