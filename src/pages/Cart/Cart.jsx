@@ -12,7 +12,7 @@ import { IoIosArrowDown } from "react-icons/io";
 import { IoIosArrowUp } from "react-icons/io";
 
 function Cart() {
-  // ✅ Get basket from context
+  // Get basket from context
   const [state, dispatch] = useContext(DataContext);
   const { basket } = state;
   const total = basket.reduce((amount,item)=>{

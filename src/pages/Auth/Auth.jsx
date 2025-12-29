@@ -9,7 +9,6 @@ import {
 import { CircleLoader } from "react-spinners";
 import { DataContext } from "../../components/DataProvider/DataProvider";
 import { Type } from "../../Utility/action.type";
-import { TiThSmall } from "react-icons/ti";
 
 function Auth() {
   const [email, setEmail] = useState("");
@@ -20,7 +19,7 @@ function Auth() {
     signUp: false,
   });
 
-  const [{ user }, dispatch] = useContext(DataContext);
+  const [dispatch] = useContext(DataContext);
   const navigate = useNavigate();
   const navStateData = useLocation();
   console.log(navStateData);
